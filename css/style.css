@@ -1907,7 +1907,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #b8e087;
+  border-color: #e4b32b;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(122, 183, 48, 0.25);
 }
@@ -3512,13 +3512,13 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #b8e087;
+  border-color: #c57820;
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #d0eaaf;
-  border-color: #d0eaaf;
+  background-color: #c77912;
+  border-color: #cc880a;
 }
 
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
@@ -3709,7 +3709,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #b8e087;
+  border-color: #d47720;
   box-shadow: 0 0 0 0.2rem rgba(122, 183, 48, 0.25);
 }
 
@@ -3802,7 +3802,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-webkit-slider-thumb:active {
-  background-color: #d0eaaf;
+  background-color: #d6661b;
 }
 
 .custom-range::-webkit-slider-runnable-track {
@@ -3830,7 +3830,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-moz-range-thumb:active {
-  background-color: #d0eaaf;
+  background-color: #b8941e;
 }
 
 .custom-range::-moz-range-track {
@@ -4589,7 +4589,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #527a20;
+  color: #ce942a;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -6110,7 +6110,7 @@ button.bg-primary:focus {
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #dcefc4 !important;
+  background-color: #ffc107 !important;
 }
 
 .bg-success {
@@ -9569,7 +9569,7 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/about-bg.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9639,7 +9639,7 @@ h6,
 }
 
 .bg-registration {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9767,4 +9767,13 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.glass-effect{
+  /* From https://css.glass */
+  background: rgba(248, 132, 17, 0.29);
+  border-radius: 50px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14.2px);
+  -webkit-backdrop-filter: blur(14.2px);
 }
