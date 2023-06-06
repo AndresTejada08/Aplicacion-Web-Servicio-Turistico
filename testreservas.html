@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reserva de Paquetes Turísticos</title>
+  <script src="reserva.js"></script>
+</head>
+<body>
+  <h1>Reserva de Paquetes Turísticos</h1>
+
+  <div>
+    <label for="nombrePaquete">Nombre del paquete:</label>
+    <input type="text" id="nombrePaquete">
+  </div>
+
+  <div>
+    <label for="destino">Destino:</label>
+    <input type="text" id="destino">
+  </div>
+
+  <div>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio">
+  </div>
+
+  <div>
+    <label for="fechaInicio">Fecha de inicio:</label>
+    <input type="date" id="fechaInicio">
+  </div>
+
+  <div>
+    <label for="fechaFin">Fecha de fin:</label>
+    <input type="date" id="fechaFin">
+  </div>
+
+  <div>
+    <label for="cantidadPersonas">Cantidad de personas:</label>
+    <input type="number" id="cantidadPersonas">
+  </div>
+
+  <button onclick="realizarReserva()">Reservar</button>
+
+  <script>
+    function realizarReserva() {
+      const nombrePaquete = document.getElementById('nombrePaquete').value;
+      const destino = document.getElementById('destino').value;
+      const precio = parseFloat(document.getElementById('precio').value);
+      const fechaInicio = document.getElementById('fechaInicio').value;
+      const fechaFin = document.getElementById('fechaFin').value;
+      const cantidadPersonas = parseInt(document.getElementById('cantidadPersonas').value);
+
+      const paquete = new PaqueteTuristico(nombrePaquete, destino, precio);
+      reservarPaquete(paquete, fechaInicio, fechaFin, cantidadPersonas);
+    }
+  </script>
+</body>
+</html>
