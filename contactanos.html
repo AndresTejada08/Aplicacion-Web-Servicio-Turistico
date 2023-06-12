@@ -78,7 +78,6 @@
                         <a href="index.html" class="nav-item nav-link">Inicio</a>
                         <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                         <a href="recomendaciones.html" class="nav-item nav-link">Recomendaciones</a>
-                        <a href="destinos.html" class="nav-item nav-link">Destinos</a>
                         <a href="paquetes.html" class="nav-item nav-link">Paquetes</a>
                         <a href="contactanos.html" class="nav-item nav-link active">Contactanos</a>
                   </div>
@@ -126,32 +125,33 @@
                         <div class="col-lg-12">
                             <div class="contact-form bg-white" style="padding: 30px;">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="emailForm" novalidate="novalidate" method='POST' action="">
+                                <form name="sentMessage" id="emailForm" novalidate="novalidate" action="https://formsubmit.co/018201471b@uandina.edu.pe" method="POST">
                                     <div class="form-row">
                                         <div class="control-group col-sm-6">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Tu Nombre"
-                                                required="required" data-validation-required-message="Please enter your name" />
+                                            <input type="text" class="form-control p-4" name="name" placeholder="Tu Nombre"
+                                                required="required" data-validation-required-message="Por favor ingresa tu nombre" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="control-group col-sm-6">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Correo"
-                                                required="required" data-validation-required-message="Please enter your email" />
+                                            <input type="email" class="form-control p-4" name="email" placeholder="Correo"
+                                                required="required" data-validation-required-message="Por favor ingresa tu  email" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="subject" placeholder="Titulo"
-                                            required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control p-4" name="subject" placeholder="Titulo"
+                                            required="required" data-validation-required-message="Por favor ingresa un titulo" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                        <textarea class="form-control py-3 px-4" rows="5" name="comments" placeholder="Mensaje"
                                             required="required"
-                                            data-validation-required-message="Please enter your message"></textarea>
+                                            data-validation-required-message="Por favor ingresa tu mensage"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="text-center">
                                         <input class="btn btn-primary py-3 px-4" type="submit" value="Enviar Mensaje" id="sendMessageButton"></input>
+                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                                     </div>
                                 </form>
                             </div>
@@ -208,7 +208,6 @@
    <!-- Contact Javascript File -->
    <script src="mail/jqBootstrapValidation.min.js"></script>
    <script src="mail/contact.js"></script>
-   <script src="email.js"></script>
 
    <!-- Template Javascript -->
    <script src="js/main.js"></script>
